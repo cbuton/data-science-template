@@ -19,8 +19,8 @@ pull_data:
 setup: initialize_git install
 
 test:
-	coverage run --source=. -m pytest -W ignore::DeprecationWarning
-	coverage report -i --omit='unittests/*' -m
+	coverage run --source=src/ -m pytest -W ignore::DeprecationWarning
+	coverage report -i --omit='tests/*' -m
 
 docs_view:
 	@echo View API documentation... 
